@@ -6,7 +6,9 @@ const initialState = {
     countries: [], //este array se va a ir modificando según los filtros que aplique en el front
     allCountries: [], //en este array voy a tener siempre TODOS los paises
     countryDetail: {},
-    allActivities: []
+    currentPage: 1,
+  
+    
   }
   
   function rootReducer(state = initialState, action) {
@@ -18,6 +20,12 @@ const initialState = {
           countries: action.payload,
           allCountries: action.payload,
         }
+        
+      case 'DETAILS_COUNTRY':
+        return{
+          ...state,
+          countryDetail:[]
+        }
 
       case 'GET_COUNTRIES_BY_NAME':
         return {
@@ -25,12 +33,6 @@ const initialState = {
           countries: action.payload,
         }
 
-      case 'GET_ACTIVITIES':
-       // console.log(action.payload)
-        return {
-           ...state,
-            allActivities: action.payload,
-        }
 
       case 'FILTER_BY_CONTINENT':
         const filteredByCntnt =
@@ -43,6 +45,8 @@ const initialState = {
         return {
           ...state,
           countries: filteredByCntnt,
+         
+        
         }
 
      case 'FILTER_BY_ACTIVITY':
@@ -59,6 +63,7 @@ const initialState = {
             ...state,
             countries: filtered,
           }
+    
     
 
      case 'SORT':
@@ -97,7 +102,14 @@ const initialState = {
           ...state,
           countryDetail: action.payload,
         }
-
+    
+  
+    case 'CURRENT_PAGE':
+      return {
+        ...state,
+        currentPage: action.payload
+      }
+   
  
 
         

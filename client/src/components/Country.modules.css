@@ -1,14 +1,15 @@
-.card {
-    width: 50%;
+
+
+  .card {
+    width: 75%;
     /* min-width: 75%; */
     /* max-height: 20vh; */
     display: flex;
     flex-direction: row;
     margin: 0.5%;
     padding: 0.5%;
-    background-color: gainsboro;
+    background-color: #f3f1ed;
     box-shadow: 0px 5px 20px 3px rgb(189, 184, 178);
-  
   }
   
   .card:hover {
@@ -21,8 +22,8 @@
   }
   
   .img {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: auto;
   }
   
   .textContainer {

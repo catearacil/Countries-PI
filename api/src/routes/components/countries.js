@@ -7,6 +7,8 @@ const router = Router()
 router.get('/', async (req, res) => {
   //incluyo la información de la tabla Activities para poder filtrar por actividad
   const all = await Country.findAll({ include: Activity })
+  
+  try{
 
   if (req.query.name) {
     let { name } = req.query
@@ -19,7 +21,13 @@ router.get('/', async (req, res) => {
   }
 
   res.json(all)
+
+  }catch(error){
+  res.send('ESTAS HACIENDO TODO MAL ',error)
+}
 })
+
+
 
 router.get('/:id', async (req, res) => {
   const one = await Country.findByPk(req.params.id.toUpperCase(), {
@@ -31,5 +39,7 @@ router.get('/:id', async (req, res) => {
   // console.log(one)
   return res.json(one)
 })
+
+
 
 module.exports = router

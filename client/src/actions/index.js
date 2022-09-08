@@ -68,6 +68,16 @@ export function filterByContinent(payload) {
 
 
 
+export function setCurrentPage(page){
+  return {
+    type: 'CURRENT_PAGE',
+    payload: page
+
+  }
+}
+
+
+
 export function filterByActivity(payload) {
   return {
     type: 'FILTER_BY_ACTIVITY',
@@ -83,6 +93,14 @@ export function sort(payload) {
     payload,
   }
 }
+
+export function Vacio(){
+  return{
+    type: 'DETAILS_COUNTRY'
+  }
+}
+
+
 
 
 

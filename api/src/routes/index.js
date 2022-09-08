@@ -12,6 +12,14 @@ const countries = require('./components/countries')
 router.use('/activity', activities)
 router.use('/countries', countries)
 
+
+
+
+
+
+
+
+
 module.exports = router
 
 

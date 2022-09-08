@@ -1,23 +1,27 @@
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { getAllCountries } from '../actions'
+import { getAllCountries} from '../actions'
 import styles from './Navbar.module.css'
 import Searchbar from './Searchbar'
 
 export default function Navbar({ sort, contFilter, actFilter}) {
   const dispatch = useDispatch()
 
+ 
+
   // ---------------------- FUNCT PARA VER LOS PAISES TOCANDO "EARTH" -----------------
   function handleClick(e) {
     e.preventDefault()
     dispatch(getAllCountries())
+    
   }
 
   useEffect(() => {
     dispatch(getAllCountries())
   }, [dispatch])
 
+ 
   //----------------------------- EL RETURN Y LO QUE VEMOS --------------------------
 
   return (
@@ -33,7 +37,7 @@ export default function Navbar({ sort, contFilter, actFilter}) {
           
           {/* filtro por continente */}
           <select className={styles.filter} onChange={(e) => contFilter(e)}>
-            <option value='All'>Filter by region...</option>
+            <option  value='All'>Filter by region...</option>
             <option value='Africa'>Africa</option>
             <option value='Americas'>Americas</option>
             <option value='Asia'>Asia</option>
@@ -43,12 +47,14 @@ export default function Navbar({ sort, contFilter, actFilter}) {
 
           {/* filtro por estacion */}
           <select className={styles.filter} onChange={(e) => actFilter(e)}>
-            <option value='All'>Filter activities by season...</option>
+            <option  value='All'>Filter activities by season...</option>
             <option value='Summer'>Summer</option>
             <option value='Fall'>Fall</option>
             <option value='Winter'>Winter</option>
             <option value='Spring'>Spring</option>
           </select>
+
+        
 
       
           {/* orden por nombre o poblacion */}

@@ -5,8 +5,8 @@
     position: relative;
     top: 0;
     left: 0;
-    /* background-image: url('https://st3.depositphotos.com/1466059/13083/i/450/depositphotos_130833964-stock-photo-grunge-yellow-paper.jpg'); */
-    background-image: url('../img/andrew-stutesman-l68Z6eF2peA-unsplash\ \(1\).jpg');
+    background-color: rgba(23, 24, 33, 0.421);
+    /* background-image: url('https://articles-img.sftcdn.net/image/upload/v1582490627/espacio_la_tierra_4_yzvwuq.jpg'); */
     background-position: center;
     z-index: 0;
   }
@@ -33,18 +33,29 @@
   }
   
   .earth {
-    color: white;
+    color:#f3f1ed;
   }
   
   .earth:hover {
     cursor: pointer;
     /* text-decoration: underline; */
   }
+
+  .earth:hover {
+    cursor: pointer;
+    background-color: #776c62;
+    color: #f3f1ed;
+    border: 1px solid #f3f1ed;
+    border-radius: 4px;
+    
+  }
   
   .byana {
     font-size: 1.7rem;
-    color: white;
+    color: #f3f1ed;
   }
+
+ 
   
   .filterContainer {
     height: 60%;
@@ -71,4 +82,11 @@
   
   .filter:last-of-type {
     width: 28%;
+  }
+
+  .filter:hover {
+    cursor: pointer;
+    background-color: #776c62;
+    color: #f3f1ed;
+    border: 1px solid #f3f1ed;
   }

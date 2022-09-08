@@ -3,30 +3,28 @@
   flex-direction: column;
   align-items: center;
   min-height: 200vh;
-  background-color: gainsboro;
-  /* background-image: url('../img/andrew-stutesman-l68Z6eF2peA-unsplash\ \(1\).jpg'); */
+  background-image: url('https://articles-img.sftcdn.net/image/upload/v1582490627/espacio_la_tierra_4_yzvwuq.jpg');
   background-size: cover;
   padding: 0;
-  margin-top: 3px;
-  border-radius: 5px;
+  
+  
+  
 }
 
 .countryContainer {
+  margin-top: 26px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  background-color:gainsboro;
-  /* background-image: url('../img/andrew-stutesman-l68Z6eF2peA-unsplash\ \(1\).jpg'); */
   margin-bottom: 5vh;
   padding: 5vh 0;
-  margin-top: 5px;
   justify-content: space-around;
   background-size: cover;
-  border-radius: 5px;
-  
+  border: rgb(117, 118, 118);
+  background-color: rgba(255, 255, 255, 0.382);
+  transition:all .7s ease-in-out;
 
-  
 }
 
 .btnContainer {
@@ -34,9 +32,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 24px;
   border-radius: 5px;
   gap: 20px;
+  margin-top: 2px;
 }
 
 .btn {

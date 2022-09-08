@@ -5,7 +5,8 @@
     height: 5vh;
     /* background-image: url('https://st3.depositphotos.com/1466059/13083/i/450/depositphotos_130833964-stock-photo-grunge-yellow-paper.jpg'); */
    /* background-color: white; */
-   background-image: url('../img/andrew-stutesman-l68Z6eF2peA-unsplash\ \(1\).jpg');
+   background-color: rgba(23, 24, 33, 0.718);
+   /* background-image: url('https://articles-img.sftcdn.net/image/upload/v1582490627/espacio_la_tierra_4_yzvwuq.jpg'); */
     background-position: bottom;
     position: fixed;
     bottom: 0;
@@ -31,7 +32,7 @@
   }
   
   .number {
-    color: black;
+    color: white;
     font-weight: 700;
     font-size: large;
     margin: 0.9em;
@@ -39,4 +40,5 @@
   
   .number:hover {
     cursor: pointer;
+    color: black
   }

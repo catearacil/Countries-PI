@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { getCountriesByName } from '../actions'
+import { getCountriesByName,setCurrentPage } from '../actions'
 import styles from './Searchbar.module.css'
 
-export default function Searchbar() {
+export default function Searchbar( ) {
   const dispatch = useDispatch()
   
   const [value, setValue] = useState('')
@@ -16,8 +16,11 @@ export default function Searchbar() {
 
   function handleSubmit(e) {
     e.preventDefault()
+    dispatch(setCurrentPage(1))
     dispatch(getCountriesByName(value))
     setValue('')
+    
+    
   }
 
   return (

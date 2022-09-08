@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/andrew-stutesman-l68Z6eF2peA-unsplash\ \(1\).jpg');
+    background-image: url('https://articles-img.sftcdn.net/image/upload/v1582490627/espacio_la_tierra_4_yzvwuq.jpg');
     background-size: cover;
   }
   
@@ -18,8 +18,8 @@
     padding: 5vh;
     width: 40vw;
     height: 60vh;
-    background-color: #d1cabfc2;
-    box-shadow: -1px 2px 104px 12px rgba(0, 0, 0, 0.68);
+    background-color: #d1cabf93;
+    box-shadow: -1px 2px 104px 12px rgba(224, 221, 221, 0);
     border-radius: 6px;
    
   }
