@@ -1,14 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from './Country.modules.css'
+import styles from './Country.module.css'
+
 
 export function Country({ id, name, continent, flag }) {
   return (
-    <div className={styles.card} key={id}>
+    <div className={styles.cards} key={id}>
 
-      <span className={styles.imgContainer}>
-        <img className={styles.img} src={flag} alt='national-flag' />
-      </span>
+     
+        <img className={styles.img} 
+        src={flag} 
+        alt='national-flag'
+         />
+  
 
       <div className={styles.textContainer}>
 
@@ -24,3 +28,4 @@ export function Country({ id, name, continent, flag }) {
     </div>
   )
 }
+

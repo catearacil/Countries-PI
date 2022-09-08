@@ -43,11 +43,7 @@
 
   .earth:hover {
     cursor: pointer;
-    background-color: #776c62;
-    color: #f3f1ed;
-    border: 1px solid #f3f1ed;
-    border-radius: 4px;
-    
+   
   }
   
   .byana {

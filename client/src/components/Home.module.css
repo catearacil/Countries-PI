@@ -12,19 +12,14 @@
 }
 
 .countryContainer {
-  margin-top: 26px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  
   align-items: center;
   margin-bottom: 5vh;
   padding: 5vh 0;
   justify-content: space-around;
-  background-size: cover;
-  border: rgb(117, 118, 118);
-  background-color: rgba(255, 255, 255, 0.382);
   transition:all .7s ease-in-out;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .btnContainer {

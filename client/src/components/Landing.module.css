@@ -10,8 +10,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('https://articles-img.sftcdn.net/image/upload/v1582490627/espacio_la_tierra_4_yzvwuq.jpg');
+    background-image: url('https://articles-img.sftcdn.net/image/upload/v1582490627/espacio_la_tierra_4_yzvwuq.jpg'); 
     background-size: cover;
+
+   
   }
   
   .textContainer {
@@ -21,6 +23,7 @@
     background-color: #d1cabf93;
     box-shadow: -1px 2px 104px 12px rgba(224, 221, 221, 0);
     border-radius: 6px;
+    
    
   }
   

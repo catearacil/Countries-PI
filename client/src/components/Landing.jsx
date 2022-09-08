@@ -6,6 +6,8 @@ export default function LandingPage() {
   return (
     <div className={styles.container}>
 
+{/* <video loop autoPlay muted> <source src="https://youtu.be/VJIxbhO8WdM" /> </video> */}
+
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Discover amazing places</h1>
       

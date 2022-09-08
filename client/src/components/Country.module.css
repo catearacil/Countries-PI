@@ -1,0 +1,55 @@
+
+
+  .cards{
+    width: 300px;
+    height: 300px;
+   
+    flex-direction: row;
+    margin: 0.5%;
+   
+    background-color: #f3f1ed7f;
+    box-shadow: 0px 5px 20px 3px rgba(189, 184, 178, 0.343);
+    border-radius: 5px;
+  }
+  
+  .cards:hover {
+    transform: translateY(-2px);
+  }
+
+  .cards img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0 ;
+
+  }
+  
+
+  
+  .textContainer {
+    text-align: left;
+    margin: 0
+  }
+  
+  .link {
+    text-decoration: none;
+    margin: 0;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  .country {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .continent {
+    font-size: 17px;
+    margin: 0;
+    color: black;
+    bottom: 0;
+    text-decoration: underline;
+  }
+
+ 
